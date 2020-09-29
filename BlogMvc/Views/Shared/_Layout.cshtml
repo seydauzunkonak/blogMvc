@@ -1,0 +1,173 @@
+﻿<!DOCTYPE HTML>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title> YAZILIM DÜNYASI </title>
+    <link rel="shortcut icon" type="image/x-icon" href="~/style/images/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="~/style.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="~/style/color/red.css" media="all" />
+    <link rel="stylesheet" type="text/css" media="screen" href="~/style/css/prettyPhoto.css" />
+    <link rel="stylesheet" type="text/css" href="~/style/type/museo.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="~/style/type/ptsans.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="~/style/type/charis.css" media="all" />
+    <!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="style/css/ie7.css" media="all" />
+    <![endif]-->
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="style/css/ie8.css" media="all" />
+    <![endif]-->
+    <!--[if IE 9]>
+    <link rel="stylesheet" type="text/css" href="style/css/ie9.css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" src="~/style/js/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript" src="~/style/js/ddsmoothmenu.js"></script>
+    <script type="text/javascript" src="~/style/js/transify.js"></script>
+    <script type="text/javascript" src="~/style/js/jquery.aw-showcase.js"></script>
+    <script type="text/javascript" src="~/style/js/jquery.jcarousel.js"></script>
+    <script type="text/javascript" src="~/style/js/carousel.js"></script>
+    <script type="text/javascript" src="~/style/js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="~/style/js/jquery.superbgimage.min.js"></script>
+    <script type="text/javascript" src="~/style/js/jquery.slickforms.js"></script>
+
+    <script type="text/javascript">$(document).ready(function () {
+            $("#showcase").awShowcase(
+                {
+                    content_width: 900,
+                    content_height: 400,
+                    auto: true,
+                    interval: 3000,
+                    continuous: false,
+                    arrows: true,
+                    buttons: true,
+                    btn_numbers: true,
+                    keybord_keys: true,
+                    mousetrace: false, /* Trace x and y coordinates for the mouse */
+                    pauseonover: true,
+                    stoponclick: false,
+                    transition: 'fade', /* hslide/vslide/fade */
+                    transition_delay: 0,
+                    transition_speed: 500,
+                    show_caption: 'onload' /* onload/onhover/show */
+                });
+        });</script>
+    <script type="text/javascript" src="~/style/js/scripts.js"></script>
+</head>
+<body>
+    <!-- Fullscreen backgrounds -->
+    <div id="thumbs">
+        <a href="~/style/images/art/bg5.jpg">1</a>
+        <!-- <a href="style/images/art/bg2.jpg">2</a>
+    <a href="style/images/art/bg3.jpg">3</a>
+    <a href="style/images/art/bg4.jpg">4</a>
+    <a href="style/images/art/bg5.jpg">5</a>
+    <a href="style/images/art/bg6.jpg">6</a>-->
+    </div>
+    <div id="superbgimage">
+        <div class="scanlines"></div>
+    </div>
+    <!-- End Fullscreen backgrounds -->
+    <!-- Begin Wrapper -->
+    <div id="wrapper">
+        <div id="header">
+            <div class="logo opacity"><a href="index.html"><img alt=" yazılım " /></a></div>
+            <div class="social">
+                <ul>
+                    <li><a href=""><img src="~/style/images/icon-rss.png" alt="RSS" /></a></li>
+                    <li><a href="http://wwww.facebook.com/yazılım"><img src="~/style/images/icon-facebook.png" alt="Facebook" /></a></li>
+                    <li><a href="http://wwww.twitter.com/yazılım"><img src="~/style/images/icon-twitter.png" alt="Twitter" /></a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <!-- Begin Menu -->
+        <div id="menu" class="menu opacity">
+            <ul>
+                <li><a href="index.html"> Anasayfa </a></li>
+                <li>
+                    <a href="portfolio.html"> Dersler </a>
+                    <ul>
+                        <li><a href="portfolio.html">  C#  </a></li>
+                        <li><a href="portfolio-post.html"> SQL </a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="index.html"> C# </a>
+                <li><a href="index.html"> WEB API  </a></li>
+                <li><a href="index.html"> SQL </a></li>
+
+            </ul>
+            <br style="clear: left" />
+        </div>
+        <!-- End Menu -->
+        <!-- Orta Kısım Başlangıç Begin Container -->
+        <div id="container" class="opacity">
+            @RenderBody()
+            <!-- CONTAINER-->
+            <!-- END CONTAINER  -->
+            < div id="footer">
+            <div class="footer-top"></div>
+            <!-- Divider -->
+            < div class="one-fourth" style="width: 40%" ;>
+            <h3>Latest Posts</h3>
+            <ul class=" latest-posts">
+                <li><span class="date"><em class="day">11</em><em class="month">May</em></span> <a href="#">Vivamus soder pharetra libero atincidunt</a> </li>
+                <li><span class="date"><em class="day">08</em><em class="month">Apr</em></span> <a href="#">Vivamus soder pharetra libero atincidunt</a> </li>
+            </ul>
+        </div>
+
+
+       <div class="one-fourth" style=" width:30%" ;>
+           
+
+
+       </div>
+    <div class="one-fourth last" style=" width:40%" ;>
+        >
+        <!--  <h3>Get in Touch</h3>
+      <!-- Form -->
+        <div class="form-container">
+            <form class="forms" action="contact/form-handler.php" method="post">
+                <fieldset>
+                    <ol>
+                        <li class="form-row text-input-row">
+                            <label>Name*</label>
+                            <input type="text" name="name" value="" class="text-input required" title="" />
+                        </li>
+                        <li class="form-row text-input-row">
+                            <label>Email*</label>
+                            <input type="text" name="email" value="" class="text-input required email" title="" />
+                        </li>
+                        <li class="form-row text-area-row">
+                            <textarea name="message" class="text-area required"></textarea>
+                        </li>
+                        <li class="form-row hidden-row">
+                            <input type="hidden" name="hidden" value="" />
+                        </li>
+                        <li class="button-row">
+                            <input type="submit" value="Submit" name="submit" class="btn-submit" />
+                        </li>
+                    </ol>
+                    <input type="hidden" name="v_error" id="v-error" value="Required" />
+                    <input type="hidden" name="v_email" id="v-email" value="Enter a valid email" />
+                </fieldset>
+            </form>
+            <div class="response"></div>
+        </div>
+        <!-- End Form -->
+    </div>
+    <div class="clear"></div>
+
+
+    <!-- End Container -->
+
+    <div id="copyright" class="opacity">
+        <p>© 2020</p>
+    </div>
+
+    <!-- End Wrapper -->
+
+
+</body>
+</html>
