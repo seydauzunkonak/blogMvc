@@ -120,6 +120,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DersController.cs" />
     <Compile Include="Controllers\SiteController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -206,6 +207,7 @@
     <Content Include="style\images\art\se4.jpg" />
     <Content Include="style\images\bullet.png" />
     <Content Include="style\images\button.png" />
+    <Content Include="style\images\c.jpg" />
     <Content Include="style\images\car-arrow.png" />
     <Content Include="style\images\check-table.png" />
     <Content Include="style\images\circle.png" />
@@ -433,6 +435,8 @@
     <Content Include="style\type\vegur\vegur-r_0.602-webfont.eot" />
     <Content Include="style\type\vegur\vegur-r_0.602-webfont.ttf" />
     <Content Include="style\type\vegur\vegur-r_0.602-webfont.woff" />
+    <Content Include="Views\Dersler\Dersler.cshtml" />
+    <Content Include="Views\Ders\CDersi.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

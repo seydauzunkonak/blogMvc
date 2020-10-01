@@ -34,6 +34,7 @@
                 {
                     content_width: 900,
                     content_height: 400,
+                    
                     auto: true,
                     interval: 3000,
                     continuous: false,
@@ -57,10 +58,10 @@
     <div id="thumbs">
         <a href="~/style/images/art/bg5.jpg">1</a>
         <!-- <a href="style/images/art/bg2.jpg">2</a>
-    <a href="style/images/art/bg3.jpg">3</a>
-    <a href="style/images/art/bg4.jpg">4</a>
-    <a href="style/images/art/bg5.jpg">5</a>
-    <a href="style/images/art/bg6.jpg">6</a>-->
+        <a href="style/images/art/bg3.jpg">3</a>
+        <a href="style/images/art/bg4.jpg">4</a>
+        <a href="style/images/art/bg5.jpg">5</a>
+        <a href="style/images/art/bg6.jpg">6</a>-->
     </div>
     <div id="superbgimage">
         <div class="scanlines"></div>
@@ -69,7 +70,7 @@
     <!-- Begin Wrapper -->
     <div id="wrapper">
         <div id="header">
-            <div class="logo opacity"><a href="index.html"><img alt=" yazılım " /></a></div>
+
             <div class="social">
                 <ul>
                     <li><a href=""><img src="~/style/images/icon-rss.png" alt="RSS" /></a></li>
@@ -79,95 +80,66 @@
                 </ul>
             </div>
         </div>
-        <div class="clear"></div>
-        <!-- Begin Menu -->
+    </div>
+    <div class="clear"></div>
+    <!-- Begin Menu -->
+    <div id="container" class="opacity">
         <div id="menu" class="menu opacity">
             <ul>
-                <li><a href="index.html"> Anasayfa </a></li>
+                <li><a href="Site/Anasayfa"> Anasayfa </a></li>
                 <li>
-                    <a href="portfolio.html"> Dersler </a>
+               
+
                     <ul>
-                        <li><a href="portfolio.html">  C#  </a></li>
+
                         <li><a href="portfolio-post.html"> SQL </a></li>
                     </ul>
                 </li>
 
                 <li>
                     <a href="index.html"> C# </a>
+                    <ul> <li><a href="portfolio.html">  Ders1  </a></li></ul>
                 <li><a href="index.html"> WEB API  </a></li>
+
                 <li><a href="index.html"> SQL </a></li>
+
 
             </ul>
             <br style="clear: left" />
         </div>
-        <!-- End Menu -->
-        <!-- Orta Kısım Başlangıç Begin Container -->
-        <div id="container" class="opacity">
-            @RenderBody()
-            <!-- CONTAINER-->
-            <!-- END CONTAINER  -->
-            < div id="footer">
-            <div class="footer-top"></div>
-            <!-- Divider -->
-            < div class="one-fourth" style="width: 40%" ;>
-            <h3>Latest Posts</h3>
-            <ul class=" latest-posts">
-                <li><span class="date"><em class="day">11</em><em class="month">May</em></span> <a href="#">Vivamus soder pharetra libero atincidunt</a> </li>
-                <li><span class="date"><em class="day">08</em><em class="month">Apr</em></span> <a href="#">Vivamus soder pharetra libero atincidunt</a> </li>
-            </ul>
-        </div>
-
-
-       <div class="one-fourth" style=" width:30%" ;>
-           
-
-
-       </div>
-    <div class="one-fourth last" style=" width:40%" ;>
-        >
-        <!--  <h3>Get in Touch</h3>
-      <!-- Form -->
-        <div class="form-container">
-            <form class="forms" action="contact/form-handler.php" method="post">
-                <fieldset>
-                    <ol>
-                        <li class="form-row text-input-row">
-                            <label>Name*</label>
-                            <input type="text" name="name" value="" class="text-input required" title="" />
-                        </li>
-                        <li class="form-row text-input-row">
-                            <label>Email*</label>
-                            <input type="text" name="email" value="" class="text-input required email" title="" />
-                        </li>
-                        <li class="form-row text-area-row">
-                            <textarea name="message" class="text-area required"></textarea>
-                        </li>
-                        <li class="form-row hidden-row">
-                            <input type="hidden" name="hidden" value="" />
-                        </li>
-                        <li class="button-row">
-                            <input type="submit" value="Submit" name="submit" class="btn-submit" />
-                        </li>
-                    </ol>
-                    <input type="hidden" name="v_error" id="v-error" value="Required" />
-                    <input type="hidden" name="v_email" id="v-email" value="Enter a valid email" />
-                </fieldset>
-            </form>
-            <div class="response"></div>
-        </div>
-        <!-- End Form -->
     </div>
+    <!-- End Menu -->
+    <!-- Orta Kısım Başlangıç Begin Container -->
+
     <div class="clear"></div>
+    <div id="container" class="opacity">
+        @RenderBody()
+        <!-- CONTAINER-->
+        <!-- END CONTAINER  -->
+      
+        <h3> SON EKLENENLER </h3>
+        <ul class=" latest-posts">
+            <li><span class="date"><em class="day">11</em><em class="month">May</em></span> <a href="#">Vivamus soder pharetra libero atincidunt</a> </li>
+            <div class="clear"></div>
+            <br />
+            
 
 
-    <!-- End Container -->
-
-    <div id="copyright" class="opacity">
-        <p>© 2020</p>
+            <li><span class="date"><em class="day">08</em><em class="month">Apr</em></span> <a href="#">Vivamus soder pharetra libero atincidunt</a> </li>
+        </ul>
     </div>
 
-    <!-- End Wrapper -->
 
+    <div class="one-fourth" style=" width:40%" ;>
+
+
+
+    </div>
+    <div class="one-fourth last" style=" width:40%" ;>
+
+
+
+    </div>
 
 </body>
 </html>

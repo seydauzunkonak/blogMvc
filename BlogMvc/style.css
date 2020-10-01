@@ -354,6 +354,7 @@ pre {
 	display: block;
 	overflow: hidden;
 	position: relative;
+	text-align: center;
 }
 .logo {
 	float: left;
@@ -371,8 +372,10 @@ pre {
 	padding: 0;
 }
 #container {
-	width: 900px;
-	margin: 20px auto;
+	width: 760px;
+	margin: 0 auto;
+
+	
 	padding: 30px;
 	overflow: hidden;
 	background-color: #fff;
@@ -478,6 +481,7 @@ ul.flickr li img {
 /*-----------------------------------------------------------------------------------*/
 
 .menu {
+	
 	font-family: 'Museo500';
 	list-style: none;
 	font-weight: normal;
@@ -490,29 +494,32 @@ ul.flickr li img {
 	z-index: 1000;
 	position: relative;
 }
-.menu ul {
-	margin: 0;
-	list-style-type: none;
-	font-family: 'Museo500';
-	font-style: normal;
-	letter-spacing: normal;
-}
-.menu ul li {
-	position: relative;
-	display: inline;
-	float: left;
-	padding: 0;
-	background: none;
-}
-.menu ul li a {
-	display: block;
-	padding: 20px 30px;
-	text-decoration: none;
-	display:block;
-	line-height: 1;
-	border-right: 1px solid #b4b4b4;
-	font-size: 14px;
-}
+	.menu ul {
+		
+		margin: 0;
+		list-style-type: none;
+		font-family: 'Museo500';
+		font-style: normal;
+		letter-spacing: normal;
+	}
+		.menu ul li {
+			
+			position: relative;
+			display: inline;
+			float: left;
+			padding: 0;
+			background: none;
+		}
+			.menu ul li a {
+				
+				display: block;
+				padding: 20px 30px;
+				text-decoration: none;
+				display: block;
+				line-height: 1;
+				border-right: 1px solid #b4b4b4;
+				font-size: 14px;
+			}
 
 /* Webkit Fix */
 @media screen and (-webkit-min-device-pixel-ratio:0) { 
