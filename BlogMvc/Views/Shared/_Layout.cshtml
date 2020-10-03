@@ -28,13 +28,13 @@
     <script type="text/javascript" src="~/style/js/jquery.prettyPhoto.js"></script>
     <script type="text/javascript" src="~/style/js/jquery.superbgimage.min.js"></script>
     <script type="text/javascript" src="~/style/js/jquery.slickforms.js"></script>
-
-    <script type="text/javascript">$(document).ready(function () {
+    <script type="text/javascript">
+    $(document).ready(function () {
             $("#showcase").awShowcase(
                 {
                     content_width: 900,
                     content_height: 400,
-                    
+
                     auto: true,
                     interval: 3000,
                     continuous: false,
@@ -51,7 +51,12 @@
                     show_caption: 'onload' /* onload/onhover/show */
                 });
         });</script>
+
+
+   
+    @RenderSection("fancyboxEklentisi", false)
     <script type="text/javascript" src="~/style/js/scripts.js"></script>
+
 </head>
 <body>
     <!-- Fullscreen backgrounds -->
@@ -86,35 +91,39 @@
     <div id="container" class="opacity">
         <div id="menu" class="menu opacity">
             <ul>
-                <li><a href="Site/Anasayfa"> Anasayfa </a></li>
-                
-                    <li>
-                        <a href="Site/cDersi"> C# </a>
-                        <ul>
-                            <li>
+                <li><a href="Anasayfa"> Anasayfa </a></li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="CDersi"> C# </a>
+                    <ul>
+                        <li>
 
-                                <a href="javascript:void(0)"> giriş  </a>
-                            </li>
+                            <a href="javascript:void(0)"> giriş  </a>
+                        </li>
 
-                        </ul>
+                    </ul>
+            </ul>
+            <ul>
 
-
-                    <li><a href="Site/WebApi"> Web Api  </a></li>
-                    <li><a href="Site/Sql"> SQL </a></li>
-                    <li>
-
-
-                        <ul>
-
-                            <li><a href="portfolio-post.html"> SQL </a></li>
-                        </ul>
-                    </li>
-
-
+                <li><a href="WebApi"> Web Api  </a></li>
+            </ul>
+            <ul>
+                <li><a href="Sql"> SQL </a></li>
+            </ul>
+            <ul>
+                <li><a href="Galeri"> Galeri  </a></li>
+            </ul>
+                       
 
 
-                </ul>
-                <br style="clear: left" />
+                           
+
+
+
+
+                    
+                    <br style="clear: left" />
 </div>
     </div>
     <!-- End Menu -->

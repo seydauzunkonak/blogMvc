@@ -1,0 +1,26 @@
+﻿
+@{
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<!-- Foto Galeri Başlangıç -->
+<div id="fotoGaleri">
+
+
+    <a class="fancybox" rel="gallery1" href="~/images/fotogaleri/mvc.jpg" title="1.Resim">
+        <img src="~/images/fotogaleri/mvc.jpg" alt="mvc" />
+    </a>
+    <a class="fancybox" rel="gallery1" href="http://farm2.staticflickr.com/1459/23610702803_83655c7c56_b.jpg" title="2.Resim">
+        <img src="http://farm2.staticflickr.com/1459/23610702803_83655c7c56_m.jpg" alt="" />
+    </a>
+
+</div>
+<!-- Foto Galeri Bitiş -->
+
+@section fancyboxEklentisi {
+    @Html.Partial("_Fancybox")
+  
+}

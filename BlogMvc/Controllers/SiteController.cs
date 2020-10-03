@@ -13,15 +13,16 @@ namespace BlogMvc.Controllers
         {
             return View();
         }
-        public ViewResult CDersi()
-        {
-            return View();
-        }
+        
         public ViewResult Sql()
         {
             return View();
         }
         public ViewResult WebApi()
+        {
+            return View();
+        }
+        public ViewResult Galeri()
         {
             return View();
         }

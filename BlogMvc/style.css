@@ -1890,3 +1890,13 @@ ol.commentlist li {
 .comment-form {
 	margin-top: 40px;
 }
+#fotoGaleri {
+	margin-top: 10px;
+}
+
+	#fotoGaleri img {
+		display: inline-block;
+		border: 4px solid #808080;
+		margin: 3px;
+		height: 150px;
+	}

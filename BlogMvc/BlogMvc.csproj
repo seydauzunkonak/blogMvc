@@ -120,6 +120,8 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CDersi\CDersiController.cs" />
+    <Compile Include="Controllers\CDersi\CDersiDetayController.cs" />
     <Compile Include="Controllers\SiteController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -131,6 +133,23 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Eklentiler\fancybox\lib\jquery-1.10.2.min.js" />
+    <Content Include="Eklentiler\fancybox\lib\jquery.mousewheel.pack.js" />
+    <Content Include="Eklentiler\fancybox\source\blank.gif" />
+    <Content Include="Eklentiler\fancybox\source\fancybox_loading%402x.gif" />
+    <Content Include="Eklentiler\fancybox\source\fancybox_loading.gif" />
+    <Content Include="Eklentiler\fancybox\source\fancybox_overlay.png" />
+    <Content Include="Eklentiler\fancybox\source\fancybox_sprite%402x.png" />
+    <Content Include="Eklentiler\fancybox\source\fancybox_sprite.png" />
+    <Content Include="Eklentiler\fancybox\source\helpers\fancybox_buttons.png" />
+    <Content Include="Eklentiler\fancybox\source\helpers\jquery.fancybox-buttons.css" />
+    <Content Include="Eklentiler\fancybox\source\helpers\jquery.fancybox-buttons.js" />
+    <Content Include="Eklentiler\fancybox\source\helpers\jquery.fancybox-media.js" />
+    <Content Include="Eklentiler\fancybox\source\helpers\jquery.fancybox-thumbs.css" />
+    <Content Include="Eklentiler\fancybox\source\helpers\jquery.fancybox-thumbs.js" />
+    <Content Include="Eklentiler\fancybox\source\jquery.fancybox.css" />
+    <Content Include="Eklentiler\fancybox\source\jquery.fancybox.js" />
+    <Content Include="Eklentiler\fancybox\source\jquery.fancybox.pack.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -213,6 +232,7 @@
     <Content Include="style\images\codebg.jpg" />
     <Content Include="style\images\cross.png" />
     <Content Include="style\images\favicon.png" />
+    <Content Include="style\images\fotogaleri\mvc.jpg" />
     <Content Include="style\images\icon-category.png" />
     <Content Include="style\images\icon-comment.png" />
     <Content Include="style\images\icon-deviantart.png" />
@@ -360,7 +380,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="Views\Ders\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -437,7 +456,10 @@
     <Content Include="style\type\vegur\vegur-r_0.602-webfont.woff" />
     <Content Include="Views\Site\WebApi.cshtml" />
     <Content Include="Views\Site\Sql.cshtml" />
-    <Content Include="Views\Site\CDersi.cshtml" />
+    <Content Include="Views\CDersi\CDersi.cshtml" />
+    <Content Include="Views\Site\Galeri.cshtml" />
+    <Content Include="Views\CDersi\Cdetay.cshtml" />
+    <Content Include="Views\Shared\_Fancybox.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
